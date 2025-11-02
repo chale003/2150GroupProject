@@ -27,5 +27,9 @@ public class User {
         wrong++;
     }
     // get percentage for results
+    public double getPercent(){
+        int total = getTotal();
+        return (total == 0) ? 0.0 :(correct * 100.0 / total);
+    }
 
 }
